@@ -1,0 +1,503 @@
+/*
+colors used:
+primary light (green/background): #D5F9DE
+secondary light (yellow/header): #DBF4A7 
+primary dark (green/text): #242E2A
+secondary dark (purple/buttons text): #2D324D
+*/
+
+
+/*----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+/* General Layout Styling */
+/*----------------------------------------------------------------------------------------------------*/
+/* General Text Styling */
+p {
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+}
+
+body{
+    background-color: #D5F9DE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #184027;
+}
+
+h1 {
+    line-height:1.4;
+    font-size: 2.75em;
+    font-weight: 500;
+    
+}
+
+h2 {
+    line-height:1.4;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#about-page h3 { margin-top: 20px;}
+
+
+/*setting images to full-width*/
+img {
+  width: 100%;
+}
+
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
+  a {
+    color: #2D324D;
+    text-decoration: none; /* No underlining */
+  }
+  a:hover {
+    color: #cc6540;
+    text-decoration: none; /* Underlining when hovering over a link */
+  }
+  
+  /*style the current nav item green*/
+  .active a {
+      color: #459d67;
+      text-decoration: underline;
+  }
+  
+  /*Pseudo classes for Accessibility for Across the Web*/
+  a:hover,
+  a:focus {
+    color: #344187;
+    text-decoration: none;
+  }
+  
+  /*CSS code for the button class*/
+  .button {
+    display: inline-block;
+    background-color: #6CCFBD;
+    color: #184027;
+    font-weight: 400;
+    text-decoration:none;
+    padding: 10px;
+    border-radius: 2px;
+    border: 2px solid #184027;
+    transition: 0.2s opacity;
+  }
+  
+  .button:hover {
+    opacity: 0.6;
+  }
+  
+  .button:active {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+  
+  /*
+  /*button rules for the mailto button*/
+  .button.contact {
+    background-color:#E8E1FE;
+    color: #184027;
+    text-transform: lowercase;
+    border: 2px solid #184027;
+    width:150px 
+  }
+  
+  .button.contact:hover {
+    background-color:#E8E1FE;
+    color:#EFB893;
+  }
+  
+  /*
+  .button.contact:active {
+    opacity: 0.8;
+    background-color: green;
+    color: #ffffff;
+  }
+  */
+  
+  /*--------------------------------------------End Section---------------------------------------------*/
+  /*-------------------------------------------Start Section---------------------------------------------*/
+  /*stye the page sections*/
+  
+  /*style the <header> element*/
+  header {
+    background-color: #DBF4A7;
+    padding: 10px 0;
+    position: relative;
+    box-shadow: 0px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  }
+  
+  /*style the logo*/
+  header .logo {
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /*Navigation Styling*/
+/*
+nav {
+  display: inline-block;
+}
+*/
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav {
+  width: auto;
+  float: right;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  margin-right: 20px;
+  right: 0;
+  top: 30px;
+  font-size: 30px;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  background-color: #DBF4A7;
+  padding: 10px;
+  border: 1px solid #DBF4A7;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+#hero {
+  background-color: #DBF4A7;
+  padding: 40px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+/* Footer */
+#contact {
+    text-align:center;
+    display:inline-block;
+    justify-content: space-between;
+    background-color: #DBF4A7;
+    width: 100%;   
+}
+
+.contactme li {
+    display:inline-block;
+    justify-content: space-between;
+}
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 20px; }
+
+#about h2 h3 {
+  text-align: center;
+  display: block;
+}
+
+.resume {
+  margin-top: 30px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width:100%;
+}
+
+#assets h3 {
+  text-align: center;
+  
+}
+
+.aboutlist {
+  list-style-type: circle;
+}
+
+
+/*project page styling*/
+
+#olive {
+    text-align:center;
+    background-color:#D5F9DE;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#projectnav {
+    text-align:center;
+    background-color:#DBF4A7;
+    width:100%;
+    padding: 10px 0;
+}
+
+.projectnavigation > ul {
+    list-style-type:none;
+    padding: 0;
+}
+
+.projectnavigation > ul > li {
+    display:inline-block
+}
+
+
+.projectnavigation > ul > li > a {
+    text-align:center;
+    display:inline;
+    justify-content: space-between;
+    width:100%;
+    
+}
+
+
+
+#userresearch {
+    text-align:center;
+    width:100%;
+    padding: 10px 0;
+    
+}
+
+#userpersonas {
+    text-align:center;
+    width:100%;
+    display:inline-block;
+    padding: 15px 15px;
+    
+}
+
+.personas {
+    text-align:left;
+    width: 100%;
+    font-weight: 300;
+}
+
+#userflows {
+    text-align:center;
+    width:100%;
+    padding: 10px 0;
+}
+
+#wireframes {
+    text-align:center;
+    width:100%;
+    padding: 10px 0;
+}
+
+#designlanguage {
+    text-align:center;
+    width:100%;
+    padding: 10px 0;
+}
+
+#finalprototype {
+    text-align:center;
+    width:100%;
+    padding: 10px 0;
+}
+
+
+
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG anamation*/
+.svg-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} 
+
+/*single line...
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+/*single line...
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+*/
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
+/*clear page flow*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+  padding: 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 641px) {
+  body {
+    font-size: 18px;
+  }
+    
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+    
+  header .logo {
+    max-width: 100px;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+  
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+    
+  .col-md-6 {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+  }
+
+ 
+    
+}
+
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+    
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+    padding-bottom: 40px;
+  }
+  .col-lg-8 {
+    width: 40%;
+    float: right;
+  }
+    
+   #about-page .col-md-6 {
+     width: 100%;
+  }
+}
